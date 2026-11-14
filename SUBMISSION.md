@@ -2,7 +2,7 @@
 
 - **Name:** Venky
 - **Date submitted:** 16 November 2026 (exercise clock)
-- **Repository link:** https://github.com/sanjay-complyance/pse-support-lab
+- **Repository link:** https://github.com/venkatesh2100/pse-support-lab
 - **Total time spent (real time):** about 40–45 minutes of hands-on lab work in this AI-assisted session (time log at the end). The exercise suggests 6–8 hours for a human working unaided; the AI compressed the reproduction and drafting, and I verified every claim against the running system.
 
 > Replies below are drafts written on the **exercise clock** (Monday 16 November 2026, Asia/Dubai). The real time is kept in the time log at the end. Screenshots, log excerpts and query output are in `evidence/` and linked from here.
