@@ -5,6 +5,18 @@
 - **Repository link:** https://github.com/venkatesh2100/pse-support-lab
 - **Total time spent (real time):** about 40–45 minutes of hands-on lab work in this AI-assisted session (time log at the end). The exercise suggests 6–8 hours for a human working unaided; the AI compressed the reproduction and drafting, and I verified every claim against the running system.
 
+## Summary
+
+**Result:** all five items acknowledged and prioritised; all five fully investigated (the minimum was three). Two were resolved with the customer (Incidents 1 and 5), and three product defects were escalated to L3 with reproduction steps and evidence (Incidents 2, 3 and 4). No application code was changed and no real emails were sent.
+
+| # | Incident | Customer | Priority | Root cause | Outcome |
+|---|---|---|---|---|---|
+| 1 | Month-end upload stuck, then duplicate document numbers | Oasis Builders Supply LLC | **P1 at triage → P2 code fix** | One Peppol participant lookup per row makes a 600-line file take 121 s, while the portal proxy times out at 60 s; retries then hit the AE-BR-09 duplicate-number check | 8/8 invoices confirmed accepted on the first upload; no duplicates sent; chunking workaround; L3 performance/idempotency fix raised |
+| 2 | API restarts, 502s, invoices stuck in Validated | Multiple customers; Marina Bay go-live | **P1** | Unbounded in-memory `SourceCache` plus a 128 MiB API limit causes OOM kills (exit 137); the in-memory submission queue loses work on restart | Reproduced with `make load` (34 failed uploads, 3 restarts); P1 escalation; interim memory increase; durable cache/queue and ASP reconciliation requested |
+| 3 | BR-CO-15 rejections on fuel invoices | Al Noor Fuel & Lubricants LLC | **P2** | Gross total is calculated from unrounded quantity × price, while net and VAT use the rounded line values, producing a 1–2 fil mismatch | 3 accepted / 3 rejected explained; customer's figures confirmed correct; L3 rounding fix and regression tests raised |
+| 4 | 32 invoices stuck in Submitted, not received | Sahara Medical Supplies FZE via Bluepeak | **P2** | The submitter ignores HTTP 429 / `Retry-After`, and sets `Submitted` before the send; the retry endpoint only accepts Validated/Failed | 8 delivered / 32 missing confirmed; customer told not to resend; targeted requeue plus 429 handling escalated |
+| 5 | All invoices rejected for date format | Ghaf Tree Café LLC | **P3** | Dates were typed as `DD/MM/YYYY` text; the parser requires `YYYY-MM-DD` or real Excel date cells | 16 date cells corrected; 4/4 invoices accepted; resolved same day; no escalation needed |
+
 > Replies below are drafts written on the **exercise clock** (Monday 16 November 2026, Asia/Dubai). The real time is kept in the time log at the end. Screenshots, log excerpts and query output are in `evidence/` and linked from here.
 >
 > Evidence timestamps are from the lab host (2026-11-14 UTC); the portal screenshots show GST (UTC+4). See [`evidence/README.md`](evidence/README.md) for the lab-time and portal-time mapping. The exercise clock is a separate scenario clock; the absolute lab times are not meant to match it — the durations and relative order are the evidence.
