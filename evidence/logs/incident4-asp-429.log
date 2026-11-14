@@ -1,0 +1,40 @@
+{"time":"2026-11-14T05:59:49.587089276Z","level":"INFO","msg":"document accepted","message_id":"30ce03f9-afe4-44cc-84c1-228f98442cc7","sender":"0235:1006453719","receiver":"0235:1001182736","invoice_number":"SMS-1116-004"}
+{"time":"2026-11-14T05:59:49.588372933Z","level":"INFO","msg":"document accepted","message_id":"4e06888d-0ad1-4c44-8ca1-b8c6a2b2d6e6","sender":"0235:1006453719","receiver":"0235:1001182736","invoice_number":"SMS-1116-003"}
+{"time":"2026-11-14T05:59:49.588371564Z","level":"INFO","msg":"document accepted","message_id":"86f3921a-02fe-4b4f-86b6-5081ef2fe7f9","sender":"0235:1006453719","receiver":"0235:1001182736","invoice_number":"SMS-1116-001"}
+{"time":"2026-11-14T05:59:49.589013592Z","level":"INFO","msg":"document accepted","message_id":"25309c42-31e1-487b-85b5-8e7f483e4b83","sender":"0235:1006453719","receiver":"0235:1001182736","invoice_number":"SMS-1116-002"}
+{"time":"2026-11-14T05:59:49.594385087Z","level":"INFO","msg":"document accepted","message_id":"39d538ee-0355-4c94-a806-b656fe6f9a11","sender":"0235:1006453719","receiver":"0235:1001182736","invoice_number":"SMS-1116-005"}
+{"time":"2026-11-14T05:59:49.595713154Z","level":"INFO","msg":"document accepted","message_id":"1ade5433-b02c-4d96-9916-0dae3819644c","sender":"0235:1006453719","receiver":"0235:1001182736","invoice_number":"SMS-1116-006"}
+{"time":"2026-11-14T05:59:49.595741887Z","level":"INFO","msg":"document accepted","message_id":"9a1ada57-76a4-4361-bf66-28c2adf7b6d4","sender":"0235:1006453719","receiver":"0235:1001182736","invoice_number":"SMS-1116-007"}
+{"time":"2026-11-14T05:59:49.596261054Z","level":"INFO","msg":"document accepted","message_id":"820f0a39-54c5-44e9-83ec-3d4e2b007b80","sender":"0235:1006453719","receiver":"0235:1001859403","invoice_number":"SMS-1116-008"}
+{"time":"2026-11-14T05:59:49.602167856Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.603499231Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.603499264Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.604741559Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.606466279Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.60763038Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.607795544Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.608975539Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.610482175Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.611703881Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.611887982Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.613052683Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.614218239Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.615415063Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.615562452Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.61672753Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.617786178Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.619025666Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.619194252Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.620293178Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.620435647Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.622008621Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.623160787Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.624507606Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.62465161Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.62562651Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.62575411Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.6276872Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.628901552Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.629089589Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.629306414Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}
+{"time":"2026-11-14T05:59:49.630472459Z","level":"WARN","msg":"rate limit exceeded","sender":"0235:1006453719","retry_after_s":1}

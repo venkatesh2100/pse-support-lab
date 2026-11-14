@@ -1,0 +1,22 @@
+-- Al Noor November import: invoice results
+ invoice_number |  status  | rejected_by |                                                                                                              errors                                                                                                              
+----------------+----------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ANF-2611-0041  | Accepted |             | []
+ ANF-2611-0042  | Rejected | asp         | [{"row": 0, "rule": "BR-CO-15", "field": "", "message": "Invoice total amount with VAT (IBT-112) must equal Invoice total amount without VAT (IBT-109) + Invoice total VAT amount (IBT-110). Got 15022.42, expected 15022.43."}]
+ ANF-2611-0043  | Accepted |             | []
+ ANF-2611-0044  | Rejected | asp         | [{"row": 0, "rule": "BR-CO-15", "field": "", "message": "Invoice total amount with VAT (IBT-112) must equal Invoice total amount without VAT (IBT-109) + Invoice total VAT amount (IBT-110). Got 11817.57, expected 11817.59."}]
+ ANF-2611-0045  | Accepted |             | []
+ ANF-2611-0046  | Rejected | asp         | [{"row": 0, "rule": "BR-CO-15", "field": "", "message": "Invoice total amount with VAT (IBT-112) must equal Invoice total amount without VAT (IBT-109) + Invoice total VAT amount (IBT-110). Got 5610.99, expected 5611.00."}]
+(6 rows)
+
+-- Totals in the rejected payloads
+ invoice_number | total_excl_vat | total_vat | total_incl_vat |                                                                  payload_totals                                                                   
+----------------+----------------+-----------+----------------+---------------------------------------------------------------------------------------------------------------------------------------------------
+ ANF-2611-0041  |       13749.75 |    687.49 |       14437.24 | {"taxAmount": 687.49, "payableAmount": 14437.24, "taxExclusiveAmount": 13749.75, "taxInclusiveAmount": 14437.24, "lineExtensionAmount": 13749.75}
+ ANF-2611-0042  |       14307.08 |    715.35 |       15022.42 | {"taxAmount": 715.35, "payableAmount": 15022.42, "taxExclusiveAmount": 14307.08, "taxInclusiveAmount": 15022.42, "lineExtensionAmount": 14307.08}
+ ANF-2611-0043  |       18684.00 |    934.20 |       19618.20 | {"taxAmount": 934.2, "payableAmount": 19618.2, "taxExclusiveAmount": 18684, "taxInclusiveAmount": 19618.2, "lineExtensionAmount": 18684}
+ ANF-2611-0044  |       11254.84 |    562.75 |       11817.57 | {"taxAmount": 562.75, "payableAmount": 11817.57, "taxExclusiveAmount": 11254.84, "taxInclusiveAmount": 11817.57, "lineExtensionAmount": 11254.84}
+ ANF-2611-0045  |       11283.30 |    564.17 |       11847.47 | {"taxAmount": 564.17, "payableAmount": 11847.47, "taxExclusiveAmount": 11283.3, "taxInclusiveAmount": 11847.47, "lineExtensionAmount": 11283.3}
+ ANF-2611-0046  |        5343.80 |    267.20 |        5610.99 | {"taxAmount": 267.2, "payableAmount": 5610.99, "taxExclusiveAmount": 5343.8, "taxInclusiveAmount": 5610.99, "lineExtensionAmount": 5343.8}
+(6 rows)
+

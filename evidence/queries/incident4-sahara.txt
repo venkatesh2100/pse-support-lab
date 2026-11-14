@@ -1,0 +1,49 @@
+-- Sahara November import (original sample upload, import d8f736f3...): status counts
+  status   | count 
+-----------+-------
+ Submitted |    32
+ Accepted  |     8
+(2 rows)
+
+ invoice_number |  status   |            asp_message_id            
+----------------+-----------+--------------------------------------
+ SMS-1116-001   | Accepted  | 86f3921a-02fe-4b4f-86b6-5081ef2fe7f9
+ SMS-1116-002   | Accepted  | 25309c42-31e1-487b-85b5-8e7f483e4b83
+ SMS-1116-003   | Accepted  | 4e06888d-0ad1-4c44-8ca1-b8c6a2b2d6e6
+ SMS-1116-004   | Accepted  | 30ce03f9-afe4-44cc-84c1-228f98442cc7
+ SMS-1116-005   | Accepted  | 39d538ee-0355-4c94-a806-b656fe6f9a11
+ SMS-1116-006   | Accepted  | 1ade5433-b02c-4d96-9916-0dae3819644c
+ SMS-1116-007   | Accepted  | 9a1ada57-76a4-4361-bf66-28c2adf7b6d4
+ SMS-1116-008   | Accepted  | 820f0a39-54c5-44e9-83ec-3d4e2b007b80
+ SMS-1116-009   | Submitted | 
+ SMS-1116-010   | Submitted | 
+ SMS-1116-011   | Submitted | 
+ SMS-1116-012   | Submitted | 
+(12 rows)
+
+-- ASP documents from the Sahara sender for the original 40 numbers (ignore the later replay with -HA1V suffix)
+{
+  "count": 8,
+  "statuses": [
+    {
+      "status": "accepted",
+      "count": 8
+    }
+  ],
+  "invoices": [
+    "SMS-1116-004",
+    "SMS-1116-001",
+    "SMS-1116-003",
+    "SMS-1116-002",
+    "SMS-1116-005",
+    "SMS-1116-006",
+    "SMS-1116-007",
+    "SMS-1116-008"
+  ]
+}
+-- Product retry endpoint cannot recover Submitted invoices
+{"requeued":0}
+
+-- Prometheus at 06:01 UTC (immediately after the original upload): 32 throttled submissions
+asp_requests_total{code="429"} = 32
+asp_documents_total{outcome="throttled"} = 32

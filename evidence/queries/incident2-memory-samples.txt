@@ -1,0 +1,22 @@
+-- API container memory samples around the restarts (UTC); limit is 128 MiB
+-- 06:03:37 restart #1, 06:04:13 restart #2, 06:05:15 restart #3
+2026-11-14T06:03:10Z restarts=0 oom=false status=running started=2026-11-14T05:47:37.469098365Z 67.69MiB / 128MiB 52.88% 0.21%
+2026-11-14T06:03:14Z restarts=0 oom=false status=running started=2026-11-14T05:47:37.469098365Z 68.44MiB / 128MiB 53.47% 0.65%
+2026-11-14T06:03:18Z restarts=0 oom=false status=running started=2026-11-14T05:47:37.469098365Z 77.07MiB / 128MiB 60.21% 7.75%
+2026-11-14T06:03:22Z restarts=0 oom=false status=running started=2026-11-14T05:47:37.469098365Z 91.25MiB / 128MiB 71.29% 15.23%
+2026-11-14T06:03:26Z restarts=0 oom=false status=running started=2026-11-14T05:47:37.469098365Z 109.2MiB / 128MiB 85.28% 15.44%
+2026-11-14T06:03:30Z restarts=0 oom=false status=running started=2026-11-14T05:47:37.469098365Z 119.6MiB / 128MiB 93.40% 6.03%
+2026-11-14T06:03:34Z restarts=0 oom=false status=running started=2026-11-14T05:47:37.469098365Z 124.2MiB / 128MiB 97.06% 414.76%
+2026-11-14T06:03:38Z restarts=1 oom=false status=running started=2026-11-14T06:03:36.764654866Z 10.49MiB / 128MiB 8.19% 0.91%
+2026-11-14T06:03:42Z restarts=1 oom=false status=running started=2026-11-14T06:03:36.764654866Z 21.54MiB / 128MiB 16.83% 2.13%
+2026-11-14T06:03:46Z restarts=1 oom=false status=running started=2026-11-14T06:03:36.764654866Z 37.8MiB / 128MiB 29.53% 13.74%
+2026-11-14T06:04:03Z restarts=1 oom=false status=running started=2026-11-14T06:03:36.764654866Z 110.6MiB / 128MiB 86.40% 11.52%
+2026-11-14T06:04:07Z restarts=1 oom=false status=running started=2026-11-14T06:03:36.764654866Z 125.6MiB / 128MiB 98.13% 40.83%
+2026-11-14T06:04:11Z restarts=1 oom=false status=running started=2026-11-14T06:03:36.764654866Z 127.1MiB / 128MiB 99.27% 390.36%
+2026-11-14T06:04:15Z restarts=2 oom=false status=running started=2026-11-14T06:04:12.940594493Z 6.949MiB / 128MiB 5.43% 0.00%
+2026-11-14T06:04:19Z restarts=2 oom=false status=running started=2026-11-14T06:04:12.940594493Z 7.18MiB / 128MiB 5.61% 0.39%
+2026-11-14T06:05:00Z restarts=2 oom=false status=running started=2026-11-14T06:04:12.940594493Z 102.9MiB / 128MiB 80.38% 7.21%
+2026-11-14T06:05:04Z restarts=2 oom=false status=running started=2026-11-14T06:04:12.940594493Z 123.3MiB / 128MiB 96.33% 7.97%
+2026-11-14T06:05:08Z restarts=2 oom=false status=running started=2026-11-14T06:04:12.940594493Z 125.8MiB / 128MiB 98.28% 128.82%
+2026-11-14T06:05:12Z restarts=2 oom=false status=running started=2026-11-14T06:04:12.940594493Z 126.9MiB / 128MiB 99.17% 77.59%
+2026-11-14T06:05:16Z restarts=3 oom=false status=running started=2026-11-14T06:05:15.160670027Z 13.5MiB / 128MiB 10.55% 0.18%

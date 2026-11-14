@@ -1,0 +1,8 @@
+{"time":"2026-11-14T05:54:25.046167337Z","level":"INFO","msg":"import received","import_id":"a034be0b-8023-416e-9ca3-f634e50c37a4","seller_id":2,"filename":"oasis-builders-nov-2026.xlsx","bytes":166969}
+{"time":"2026-11-14T05:54:25.155940096Z","level":"INFO","msg":"import parsed","import_id":"a034be0b-8023-416e-9ca3-f634e50c37a4","seller_id":2,"filename":"oasis-builders-nov-2026.xlsx","rows":600,"invoices":8}
+{"time":"2026-11-14T05:56:26.05259963Z","level":"INFO","msg":"import completed","import_id":"a034be0b-8023-416e-9ca3-f634e50c37a4","seller_id":2,"filename":"oasis-builders-nov-2026.xlsx","rows":600,"invoices":8,"validated":8,"rejected":0,"duration_ms":121007}
+{"time":"2026-11-14T05:56:26.055578061Z","level":"INFO","msg":"http request","method":"POST","path":"/v1/imports","route":"/v1/imports","status":201,"duration_ms":121018}
+{"time":"2026-11-14T05:56:43.236917317Z","level":"INFO","msg":"import received","import_id":"1937d449-6ded-4554-9858-2068e392e2ed","seller_id":2,"filename":"oasis-builders-nov-2026.xlsx","bytes":166969}
+{"time":"2026-11-14T05:56:43.34163932Z","level":"INFO","msg":"import parsed","import_id":"1937d449-6ded-4554-9858-2068e392e2ed","seller_id":2,"filename":"oasis-builders-nov-2026.xlsx","rows":600,"invoices":8}
+{"time":"2026-11-14T05:58:44.247707645Z","level":"INFO","msg":"import completed","import_id":"1937d449-6ded-4554-9858-2068e392e2ed","seller_id":2,"filename":"oasis-builders-nov-2026.xlsx","rows":600,"invoices":8,"validated":0,"rejected":8,"duration_ms":121013}
+{"time":"2026-11-14T05:58:44.250815643Z","level":"INFO","msg":"http request","method":"POST","path":"/v1/imports","route":"/v1/imports","status":201,"duration_ms":121020}

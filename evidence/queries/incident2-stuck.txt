@@ -1,0 +1,35 @@
+-- Invoice statuses after the morning peak
+  status   | count 
+-----------+-------
+ Submitted |   698
+ Accepted  |   683
+ Parsed    |    65
+ Validated |    63
+ Rejected  |    22
+(5 rows)
+
+-- Imports left in a non-Completed state
+   status   | count 
+------------+-------
+ Completed  |   224
+ Processing |    20
+ Uploaded   |     1
+(3 rows)
+
+-- Examples of imports stuck in Processing / Uploaded
+                  id                  | seller_id |       filename       |   status   | row_count | invoice_count |          created_at           
+--------------------------------------+-----------+----------------------+------------+-----------+---------------+-------------------------------
+ 33cc1337-990d-44c6-b5b7-6b84d360f042 |         8 | zpl-morning-240.xlsx | Uploaded   |         0 |             0 | 2026-11-14 06:05:14.537266+00
+ 13f65f03-8d09-403f-a45e-4944c2cc4b97 |         7 | pce-morning-239.xlsx | Processing |         0 |             0 | 2026-11-14 06:05:10.069812+00
+ 77d45ed2-3684-495f-babd-0180a31097a2 |         3 | mbh-morning-238.xlsx | Processing |        12 |             6 | 2026-11-14 06:05:09.782419+00
+ d6123baa-0e72-4a87-8a49-a43089376b91 |         1 | drt-morning-237.xlsx | Processing |        12 |             6 | 2026-11-14 06:05:09.522744+00
+ 5a81e284-ebc4-4b0c-8e64-feec1f9831e5 |         8 | zpl-morning-236.xlsx | Processing |        12 |             6 | 2026-11-14 06:05:08.760664+00
+ 528bbce9-3918-4407-ac2b-c688e95b6f45 |         3 | mbh-morning-146.xlsx | Processing |        12 |             6 | 2026-11-14 06:04:08.785125+00
+ e629db84-bcb6-4787-808a-39015be5ab42 |         1 | drt-morning-145.xlsx | Processing |        12 |             6 | 2026-11-14 06:04:08.328202+00
+ 5425adc4-5251-483e-8f3f-d12bd560b150 |         8 | zpl-morning-144.xlsx | Processing |        12 |             6 | 2026-11-14 06:04:07.954596+00
+ 5c1327d6-7ee2-475a-b311-5fe7c815bba6 |         7 | pce-morning-143.xlsx | Processing |        12 |             6 | 2026-11-14 06:04:07.774717+00
+ 91697a2c-5c39-4712-b859-dc921bc9331f |         3 | mbh-morning-142.xlsx | Processing |        12 |             6 | 2026-11-14 06:04:07.638784+00
+ b6562292-3ee4-4ba3-a8c0-c15e4e1fb1fb |         1 | drt-morning-141.xlsx | Processing |        12 |             6 | 2026-11-14 06:04:07.512943+00
+ a1e289b5-e081-4cd7-ba1f-5761d6866a08 |         8 | zpl-morning-140.xlsx | Processing |        12 |             6 | 2026-11-14 06:04:06.34539+00
+(12 rows)
+

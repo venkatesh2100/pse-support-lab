@@ -1,0 +1,25 @@
+-- Cell-by-cell diff between samples/ghaf-cafe-nov-2026.xlsx and
+-- evidence/ghaf-cafe-nov-2026-corrected.xlsx (Invoices sheet, sheet2.xml).
+-- Only the two date columns (D = Invoice issue date, E = Payment due date) changed.
+-- 16 cells across the eight line rows; no other cell changed.
+
+ cell | original   | corrected
+------+------------+------------
+ D2   | 13/11/2026 | 2026-11-13
+ D3   | 13/11/2026 | 2026-11-13
+ D4   | 13/11/2026 | 2026-11-13
+ D5   | 13/11/2026 | 2026-11-13
+ D6   | 14/11/2026 | 2026-11-14
+ D7   | 14/11/2026 | 2026-11-14
+ D8   | 14/11/2026 | 2026-11-14
+ D9   | 15/11/2026 | 2026-11-15
+ E2   | 13/12/2026 | 2026-12-13
+ E3   | 13/12/2026 | 2026-12-13
+ E4   | 13/12/2026 | 2026-12-13
+ E5   | 13/12/2026 | 2026-12-13
+ E6   | 14/12/2026 | 2026-12-14
+ E7   | 14/12/2026 | 2026-12-14
+ E8   | 14/12/2026 | 2026-12-14
+ E9   | 15/12/2026 | 2026-12-15
+
+-- 16 rows. Corrected workbook accepted 4/4 (see incident5-ghaf.txt).

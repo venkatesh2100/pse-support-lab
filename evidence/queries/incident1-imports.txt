@@ -1,0 +1,35 @@
+-- Imports: first attempt then retry (lab wall clock UTC)
+                  id                  |           filename           |  status   | row_count | invoice_count | duration_ms |          created_at           |         completed_at          
+--------------------------------------+------------------------------+-----------+-----------+---------------+-------------+-------------------------------+-------------------------------
+ a034be0b-8023-416e-9ca3-f634e50c37a4 | oasis-builders-nov-2026.xlsx | Completed |       600 |             8 |      121007 | 2026-11-14 05:54:25.042955+00 | 2026-11-14 05:56:26.05073+00
+ 1937d449-6ded-4554-9858-2068e392e2ed | oasis-builders-nov-2026.xlsx | Completed |       600 |             8 |      121013 | 2026-11-14 05:56:43.232846+00 | 2026-11-14 05:58:44.245837+00
+(2 rows)
+
+-- Invoices in those imports
+              import_id               | invoice_number |  status  | rejected_by |            asp_message_id            
+--------------------------------------+----------------+----------+-------------+--------------------------------------
+ 1937d449-6ded-4554-9858-2068e392e2ed | OBS-2611-001   | Rejected | portal      | 
+ 1937d449-6ded-4554-9858-2068e392e2ed | OBS-2611-002   | Rejected | portal      | 
+ 1937d449-6ded-4554-9858-2068e392e2ed | OBS-2611-003   | Rejected | portal      | 
+ 1937d449-6ded-4554-9858-2068e392e2ed | OBS-2611-004   | Rejected | portal      | 
+ 1937d449-6ded-4554-9858-2068e392e2ed | OBS-2611-005   | Rejected | portal      | 
+ 1937d449-6ded-4554-9858-2068e392e2ed | OBS-2611-006   | Rejected | portal      | 
+ 1937d449-6ded-4554-9858-2068e392e2ed | OBS-2611-007   | Rejected | portal      | 
+ 1937d449-6ded-4554-9858-2068e392e2ed | OBS-2611-008   | Rejected | portal      | 
+ a034be0b-8023-416e-9ca3-f634e50c37a4 | OBS-2611-001   | Accepted |             | 49574e90-287a-4c75-990b-346a525e3932
+ a034be0b-8023-416e-9ca3-f634e50c37a4 | OBS-2611-002   | Accepted |             | a0070d22-9236-43df-b3e5-ef9a92ffc0d3
+ a034be0b-8023-416e-9ca3-f634e50c37a4 | OBS-2611-003   | Accepted |             | e3d6b407-5492-410d-a898-bb1618398b87
+ a034be0b-8023-416e-9ca3-f634e50c37a4 | OBS-2611-004   | Accepted |             | f55a60e1-8754-4460-945f-ac30de08943d
+ a034be0b-8023-416e-9ca3-f634e50c37a4 | OBS-2611-005   | Accepted |             | 7a1a43a0-45d3-4206-bfe3-647991f0763c
+ a034be0b-8023-416e-9ca3-f634e50c37a4 | OBS-2611-006   | Accepted |             | 03528a1b-eae1-4261-9b10-64eab24afdec
+ a034be0b-8023-416e-9ca3-f634e50c37a4 | OBS-2611-007   | Accepted |             | a7b3096e-bd4b-4e46-9f1b-f63e7907244e
+ a034be0b-8023-416e-9ca3-f634e50c37a4 | OBS-2611-008   | Accepted |             | 61620fe4-2f90-4c3a-a0d9-e6b1644c9f0d
+(16 rows)
+
+-- Duplicate error detail
+ invoice_number |                                                                              errors                                                                               
+----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ OBS-2611-001   | [{"row": 2, "rule": "AE-BR-09", "field": "Invoice number*", "message": "Document number 'OBS-2611-001' already exists for this seller with status 'Accepted'."}]
+ OBS-2611-002   | [{"row": 77, "rule": "AE-BR-09", "field": "Invoice number*", "message": "Document number 'OBS-2611-002' already exists for this seller with status 'Accepted'."}]
+(2 rows)
+

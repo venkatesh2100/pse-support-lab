@@ -1,0 +1,29 @@
+[06:01:07] replaying customer traffic against http://api:8080 (run HA1V)
+[06:01:07] al-noor      uploading al-noor-fuel-nov-2026.xlsx (93 KB)
+[06:01:07] ghaf         uploading ghaf-cafe-nov-2026.xlsx (92 KB)
+[06:01:07] sahara       uploading sahara-medical-batch-1116.xlsx (99 KB)
+[06:01:07] oasis        uploading oasis-builders-nov-2026.xlsx (169 KB)
+[06:01:09] ghaf         HTTP 201 in 1.7s  import=535269c9-2104-4fd6-9cd9-988d043aa2b2  status=Completed  invoices=4
+[06:01:10] al-noor      HTTP 201 in 2.7s  import=c8187ccd-ba4d-4896-b87f-b613024f6480  status=Completed  invoices=6
+[06:01:17] ghaf         invoices: Rejected 4
+[06:01:18] al-noor      invoices: Accepted 3, Rejected 3
+[06:01:19] sahara       HTTP 201 in 12.3s  import=75bd5236-3c8f-49ec-af78-b75f88d42e55  status=Completed  invoices=40
+[06:01:27] sahara       invoices: Submitted 32, Accepted 8
+[06:03:08] oasis        HTTP 201 in 121.0s  import=4ec3933d-3373-4675-a5a2-ded084990791  status=Completed  invoices=8
+[06:03:16] oasis        invoices: Accepted 8
+[06:03:16] peak       240 uploads from 4 customers, 8 at a time
+[06:03:26] peak       25/240 uploads done (25 ok, 0 failed)
+[06:03:34] peak       50/240 uploads done (50 ok, 0 failed)
+[06:03:47] peak       75/240 uploads done (66 ok, 9 failed)
+[06:03:56] peak       100/240 uploads done (91 ok, 9 failed)
+[06:04:04] peak       125/240 uploads done (116 ok, 9 failed)
+[06:04:43] peak       150/240 uploads done (129 ok, 21 failed)
+[06:04:50] peak       175/240 uploads done (149 ok, 26 failed)
+[06:04:59] peak       200/240 uploads done (174 ok, 26 failed)
+[06:05:07] peak       225/240 uploads done (199 ok, 26 failed)
+[06:05:14] peak       finished: 206 ok, 34 failed
+[06:05:14] peak         24 x Post "http://api:8080/v1/imports": EOF
+[06:05:14] peak          2 x Post "http://api:8080/v1/imports": dial tcp 172.21.0.4:8080: connect: connection
+[06:05:14] peak          8 x Post "http://api:8080/v1/imports": dial tcp 65.20.73.163:8080: i/o timeout
+[06:05:29] summary    imports since start: map[Completed:213 Processing:20 Uploaded:1]
+[06:05:29] summary    invoices: Parsed 65, Validated 63, Submitted 666, Accepted 625, Rejected 7

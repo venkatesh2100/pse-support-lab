@@ -1,0 +1,15 @@
+{"time":"2026-11-13T16:41:04.596327565Z","level":"INFO","msg":"api starting","addr":":8080","asp_url":"http://asp-mock:8090"}
+{"time":"2026-11-13T16:41:04.611829664Z","level":"INFO","msg":"submission workers started","workers":4}
+{"time":"2026-11-13T16:41:04.612130368Z","level":"INFO","msg":"api listening","addr":":8080"}
+{"time":"2026-11-14T05:47:38.076599142Z","level":"INFO","msg":"api starting","addr":":8080","asp_url":"http://asp-mock:8090"}
+{"time":"2026-11-14T05:47:39.125354677Z","level":"INFO","msg":"submission workers started","workers":4}
+{"time":"2026-11-14T05:47:39.12580097Z","level":"INFO","msg":"api listening","addr":":8080"}
+{"time":"2026-11-14T06:03:37.044961243Z","level":"INFO","msg":"api starting","addr":":8080","asp_url":"http://asp-mock:8090"}
+{"time":"2026-11-14T06:03:37.052245586Z","level":"INFO","msg":"submission workers started","workers":4}
+{"time":"2026-11-14T06:03:37.052548353Z","level":"INFO","msg":"api listening","addr":":8080"}
+{"time":"2026-11-14T06:04:13.200722912Z","level":"INFO","msg":"api starting","addr":":8080","asp_url":"http://asp-mock:8090"}
+{"time":"2026-11-14T06:04:13.212234456Z","level":"INFO","msg":"submission workers started","workers":4}
+{"time":"2026-11-14T06:04:13.21252105Z","level":"INFO","msg":"api listening","addr":":8080"}
+{"time":"2026-11-14T06:05:15.444079463Z","level":"INFO","msg":"api starting","addr":":8080","asp_url":"http://asp-mock:8090"}
+{"time":"2026-11-14T06:05:15.453010563Z","level":"INFO","msg":"submission workers started","workers":4}
+{"time":"2026-11-14T06:05:15.453224855Z","level":"INFO","msg":"api listening","addr":":8080"}

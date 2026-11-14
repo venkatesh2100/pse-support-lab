@@ -1,0 +1,15 @@
+-- Prometheus: cumulative participant lookups during the 600-row Oasis upload (UTC)
+-- 0 -> 600 lookups between 05:54:30 and 05:56:30; ASP lookup latency is 200 ms, so 600 x 0.2 s = 120 s.
+2026-11-14T05:53:00Z lookups=0
+2026-11-14T05:53:30Z lookups=0
+2026-11-14T05:54:00Z lookups=0
+2026-11-14T05:54:30Z lookups=21
+2026-11-14T05:55:00Z lookups=170
+2026-11-14T05:55:30Z lookups=319
+2026-11-14T05:56:00Z lookups=468
+2026-11-14T05:56:30Z lookups=600
+2026-11-14T05:57:00Z lookups=680
+2026-11-14T05:57:30Z lookups=829
+2026-11-14T05:58:00Z lookups=977
+-- Prometheus: total import processing time in the 10 minutes to 06:00 (seconds)
+258.8413373762987
